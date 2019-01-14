@@ -1,0 +1,20 @@
+language: php
+
+php:
+ 
+  - 7.1.6
+
+env:
+  - DB=mysql
+
+services:
+  - memcached
+  
+before_script:
+  - composer install
+  
+before_install:
+  - ssh-keygen -q -N "" -f ~/.ssh/google_compute_engine
+notifications:
+  email: false
+script: phpunit --configuration phpunit.xml --coverage-text
