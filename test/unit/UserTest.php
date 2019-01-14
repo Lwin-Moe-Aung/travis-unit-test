@@ -18,7 +18,7 @@ class UserTest extends TestCase
 	public function testThatweCanGetTheName()
 	{
 
-		$this->user->setNamertr('lwin Moe Aung');
+		$this->user->setName('lwin Moe Aung');
 
 		$this->assertEquals($this->user->getName(),'lwin Moe Aung');
 	}
