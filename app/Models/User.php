@@ -16,7 +16,8 @@ class User
 
 	public function getName()
 	{
-		 $this->full_name;
+		
+		$this->full_name;
 	}
 
 	public function setEmail($email)
